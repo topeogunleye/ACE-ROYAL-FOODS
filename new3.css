@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-content {
+    max-width: 50%;
+}
+
+.header-img {
+    max-width: 50%;
+}
+
+button.order-now {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.menu-item {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.favorites {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.favorites-content {
+    max-width: 50%;
+}
+
+.favorite-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.favorite-img {
+    width: 100%;
+}
+
+.best-sellers {
+    text-align: center;
+    padding: 20px;
+}
+
+.best-seller-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.best-seller-item {
+    margin: 0 10px;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservation {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.reservation form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservation form input,
+.reservation form button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.testimonial {
+    margin: 10px 0;
+}
+
+.blog {
+    padding: 20px;
+    text-align: center;
+}
+
+.blog-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.blog-post {
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .menu-items, .favorite-images, .best-seller-items, .testimonial-items, .blog-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1080px) {
+    .menu-items, .favorite-images, .best-seller-items, .testimonial-items, .blog-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1440px) {
+    .menu-items, .favorite-images, .best-seller-items, .testimonial-items, .blog-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
