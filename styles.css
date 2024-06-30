@@ -9,8 +9,8 @@
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --fontwhite: #fff;
-  --yllwcolor: #FFF9DB;
-  --orgcolor: #FFA500;
+  --yllwcolor: #fff9db;
+  --orgcolor: #ffa500;
   --bgcolor: linear-gradient(
     114deg,
     rgba(241, 242, 246, 1) 0%,
@@ -31,28 +31,36 @@
   padding: 10px 0;
 }
 
-.landing-section section button{
-    border-radius: 6px;
-    height: 50px;
-    width: max-content;
-    margin-top: 20px;
-    padding: 22px;
-    background-color:var(--orgcolor);
-    border: 1px solid var(--yllwcolor);
-    color: var(--brndcolor);
-    letter-spacing: 1.5px;
-    font-weight: 500;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font);
+.landing-section section button {
+  border-radius: 6px;
+  height: 50px;
+  width: max-content;
+  margin-top: 20px;
+  padding: 22px;
+  background-color: var(--orgcolor);
+  border: 1px solid var(--yllwcolor);
+  color: var(--brndcolor);
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font);
+}
+
+.landing-section div .numbers {
+  color: var(--fontwhite)
+}
+
+.landing-section div div {
+  padding: 10px 0;
 }
 
 .landing-section section img {
-    height: 22px;
-    padding-left: 15px;
-    cursor: pointer;
+  height: 22px;
+  padding-left: 15px;
+  cursor: pointer;
 }
 
 .landing-section section h1 span {
@@ -67,6 +75,11 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
+}
+
+.material-symbols-outlined {
+  color: #ffa500;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
 /* Mobile Screens */
