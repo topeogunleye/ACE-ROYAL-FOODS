@@ -12,138 +12,147 @@
   </head>
   <body>
     <div class="container">
-      <div class="landing-section">
-        <header>
-          <img src="./images/background/logo.png" />
-        </header>
-        <section>
-          <h1>Your Go-To Spot for Quick and <span>Tasty Eats!</span></h1>
-          <p>
-            A leader in casual dining, <span>ACE ROYAL FOODS</span> offers a
-            diverse menu—from pizzas and quesadillas to sushi and teppanyaki
-          </p>
-          <button>
-            ORDER
-            <a href="https://wa.me/919072766871" target="_blank"
-              ><img src="./images/whatsapp 32px.png" alt=""
-            /></a>
-          </button>
-          <div>
-            <div class="numbers">01 - 04</div>
-            <div>
-              <span class="material-symbols-outlined"> arrow_circle_left </span>
-              <span class="material-symbols-outlined">
-                arrow_circle_right
-              </span>
+      <main>
+        <div class="landing-section">
+          <header>
+            <img
+              src="./images/logo-removebg.png"
+              alt="ACE ROYAL FOODS Logo"
+            />
+          </header>
+
+          <section>
+            <h1>Your Go-To Spot for Quick and <span>Tasty Eats!</span></h1>
+            <p>
+              A leader in casual dining, <span>ACE ROYAL FOODS</span> offers a
+              diverse menu—from pizzas and quesadillas to sushi and teppanyaki
+            </p>
+            <a
+              href="https://wa.me/919072766871"
+              target="_blank"
+              class="order-button"
+            >
+              ORDER
+              <img src="./images/whatsapp-32px.png" alt="WhatsApp Icon" class="whatsapp-icon"/>
+            </a>
+            <div class="navigation">
+              <div class="numbers">01 - 04</div>
+              <div class="arrows">
+                <span class="material-symbols-outlined">
+                  <img src="images/arrow_circle_left_48dp_FILL0_wght400_GRAD0_opsz48.svg" class="arrow" alt="Navigate Left"/>
+                </span>
+                <span class="material-symbols-outlined">
+                  <img src="images/arrow_circle_right_48dp_FILL0_wght400_GRAD0_opsz48.svg" class="arrow" alt="Navigate Right"/>
+                </span>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="menu">
+          <div class="menu-items">
+            <div class="menu-item">Combo Meals</div>
+            <div class="menu-item">Pastas</div>
+            <div class="menu-item">Burger</div>
+            <div class="menu-item">Sandwich</div>
+            <div class="menu-item">Sides & Fries</div>
+            <div class="menu-item">Kids Meals</div>
+          </div>
+        </section>
+
+        <section class="favorites">
+          <div class="favorites-content">
+            <h2>Captivating Culinary Favorites</h2>
+            <p>Here are some culinary delights that we are known for.</p>
+            <button class="order-now">Order Now</button>
+          </div>
+          <div class="favorite-images">
+            <img src="favorite1.jpg" alt="Favorite Food" class="favorite-img" />
+            <img src="favorite2.jpg" alt="Favorite Food" class="favorite-img" />
+          </div>
+        </section>
+
+        <section class="best-sellers">
+          <h2>Best Selling Items</h2>
+          <div class="best-seller-items">
+            <div class="best-seller-item">
+              <img src="drink.jpg" alt="Drink" />
+              <p>Tasty Lime Juice Cocktail - $8.00 USD</p>
+            </div>
+            <div class="best-seller-item">
+              <img src="pizza.jpg" alt="Pizza" />
+              <p>Special Delicious Pizza - $10.00 USD</p>
+            </div>
+            <div class="best-seller-item">
+              <img src="combo.jpg" alt="Combo Meal" />
+              <p>The Combo Meals - $15.00 USD</p>
+            </div>
+            <div class="best-seller-item">
+              <img src="lemonade.jpg" alt="Lemonade" />
+              <p>Lemon Tea - $12.00 USD</p>
             </div>
           </div>
         </section>
-      </div>
+
+        <section class="reservation">
+          <h2>Reservations</h2>
+          <form>
+            <input type="text" name="name" placeholder="Your Name" />
+            <input type="text" name="phone" placeholder="Phone Number" />
+            <input type="text" name="date" placeholder="Reservation Date" />
+            <input type="text" name="time" placeholder="Reservation Time" />
+            <input type="text" name="persons" placeholder="Persons" />
+            <button type="submit">Book Reservation</button>
+          </form>
+        </section>
+
+        <section class="testimonials">
+          <h2>Our Cherished Patrons</h2>
+          <div class="testimonial-items">
+            <div class="testimonial">
+              <p>"Amazing food and service!" - Anna Rose</p>
+            </div>
+            <div class="testimonial">
+              <p>"Best dining experience ever!" - Stuart Mark</p>
+            </div>
+            <div class="testimonial">
+              <p>"I love the ambiance and food." - Megan Johnson</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="blog">
+          <h2>Our Blog</h2>
+          <div class="blog-items">
+            <div class="blog-post">
+              <h3>The Palate Pioneer: Navigating the World of Tastes</h3>
+              <p>April 12, 2024</p>
+              <button class="read-more">Read More</button>
+            </div>
+            <div class="blog-post">
+              <h3>The Culinary Canvas: Artistry on a Plate Buffet</h3>
+              <p>April 6, 2024</p>
+              <button class="read-more">Read More</button>
+            </div>
+            <div class="blog-post">
+              <h3>Tasting Traditions: A Culinary and Odyssey</h3>
+              <p>April 1, 2024</p>
+              <button class="read-more">Read More</button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-content">
+          <p>&copy; Food Lover 2024. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+      </footer>
     </div>
-
-    <section class="menu">
-      <div class="menu-items">
-        <div class="menu-item">Combo Meals</div>
-        <div class="menu-item">Pastas</div>
-        <div class="menu-item">Burger</div>
-        <div class="menu-item">Sandwich</div>
-        <div class="menu-item">Sides & Fries</div>
-        <div class="menu-item">Kids Meals</div>
-      </div>
-    </section>
-
-    <section class="favorites">
-      <div class="favorites-content">
-        <h2>Captivating Culinary Favorites</h2>
-        <p>Here are some culinary delights that we are known for.</p>
-        <button class="order-now">Order Now</button>
-      </div>
-      <div class="favorite-images">
-        <img src="favorite1.jpg" alt="Favorite Food" class="favorite-img" />
-        <img src="favorite2.jpg" alt="Favorite Food" class="favorite-img" />
-      </div>
-    </section>
-
-    <section class="best-sellers">
-      <h2>Best Selling Items</h2>
-      <div class="best-seller-items">
-        <div class="best-seller-item">
-          <img src="drink.jpg" alt="Drink" />
-          <p>Tasty Lime Juice Cocktail - $8.00 USD</p>
-        </div>
-        <div class="best-seller-item">
-          <img src="pizza.jpg" alt="Pizza" />
-          <p>Special Delicious Pizza - $10.00 USD</p>
-        </div>
-        <div class="best-seller-item">
-          <img src="combo.jpg" alt="Combo Meal" />
-          <p>The Combo Meals - $15.00 USD</p>
-        </div>
-        <div class="best-seller-item">
-          <img src="lemonade.jpg" alt="Lemonade" />
-          <p>Lemon Tea - $12.00 USD</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="reservation">
-      <h2>Reservations</h2>
-      <form>
-        <input type="text" name="name" placeholder="Your Name" />
-        <input type="text" name="phone" placeholder="Phone Number" />
-        <input type="text" name="date" placeholder="Reservation Date" />
-        <input type="text" name="time" placeholder="Reservation Time" />
-        <input type="text" name="persons" placeholder="Persons" />
-        <button type="submit">Book Reservation</button>
-      </form>
-    </section>
-
-    <section class="testimonials">
-      <h2>Our Cherished Patrons</h2>
-      <div class="testimonial-items">
-        <div class="testimonial">
-          <p>"Amazing food and service!" - Anna Rose</p>
-        </div>
-        <div class="testimonial">
-          <p>"Best dining experience ever!" - Stuart Mark</p>
-        </div>
-        <div class="testimonial">
-          <p>"I love the ambiance and food." - Megan Johnson</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="blog">
-      <h2>Our Blog</h2>
-      <div class="blog-items">
-        <div class="blog-post">
-          <h3>The Palate Pioneer: Navigating the World of Tastes</h3>
-          <p>April 12, 2024</p>
-          <button class="read-more">Read More</button>
-        </div>
-        <div class="blog-post">
-          <h3>The Culinary Canvas: Artistry on a Plate Buffet</h3>
-          <p>April 6, 2024</p>
-          <button class="read-more">Read More</button>
-        </div>
-        <div class="blog-post">
-          <h3>Tasting Traditions: A Culinary and Odyssey</h3>
-          <p>April 1, 2024</p>
-          <button class="read-more">Read More</button>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer-content">
-        <p>&copy; Food Lover 2024. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="#">Home</a>
-          <a href="#">Menu</a>
-          <a href="#">Contact</a>
-          <a href="#">Blog</a>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
