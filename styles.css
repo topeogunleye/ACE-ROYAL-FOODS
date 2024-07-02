@@ -18,6 +18,32 @@
   );
 }
 
+body {
+  font-family: "Merriweather", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+
+.landing-section {
+  height: 76vh;
+  width: 100%;
+  background: linear-gradient(45deg, rgba(70, 69, 67, 0.3), rgba(2, 2, 1, 0.2)),
+    url(./images/background/background.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.landing-section section {
+  padding: 20px 40px;
+}
+
+.landing-section header img {
+  height: 187px;
+}
+
 .landing-section section h1 {
   color: var(--fontwhite);
   font-size: 3.7rem;
@@ -26,15 +52,18 @@
   font-family: "Merriweather", serif;
 }
 
+.landing-section section h1 span {
+  color: #7bce61;
+}
+
 .landing-section section p {
-  color: #fff9db;
+  color: var(--yllwcolor);
   padding: 10px 0;
 }
 
-.landing-section section button {
+.order-button {
   border-radius: 6px;
   height: 50px;
-  width: max-content;
   margin-top: 20px;
   padding: 22px;
   background-color: var(--orgcolor);
@@ -47,234 +76,69 @@
   align-items: center;
   justify-content: center;
   font-family: var(--font);
+  text-decoration: none;
 }
 
-.landing-section div .numbers {
-  color: var(--fontwhite)
+.landing-section .navigation {
+  display: grid;
+  place-items: center;
 }
 
-.landing-section div div {
+.landing-section .numbers {
+  color: var(--fontwhite);
+  font-size: xx-large;
+}
+
+.landing-section .arrows {
   padding: 10px 0;
 }
 
-.landing-section section img {
+.landing-section .arrows .arrow {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.landing-section section .whatsapp-icon {
   height: 22px;
   padding-left: 15px;
   cursor: pointer;
 }
 
-.landing-section section h1 span {
-  color: #7bce61;
-}
-
-.container .landing-section {
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(45deg, rgba(70, 69, 67, 0.3), rgba(2, 2, 1, 0.2)),
-    url(./images/background/OIG4.jfif) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-}
-
 .material-symbols-outlined {
   color: #ffa500;
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-size: xx-large;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 100, "opsz" 48;
 }
 
 /* Mobile Screens */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .landing-section {
     background: linear-gradient(
         45deg,
         rgba(70, 69, 67, 0.9),
         rgba(2, 2, 1, 0.2)
       ),
-      url(./images/tortilla-wrap-with-falafel-fresh-salad-vegan-tacos-vegetarian-healthy-food-top-view.jpg)
-        no-repeat;
+      url(./images/background/background.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    height: 100vh;
-    width: 100%;
   }
-  .landing-section section {
-    /* padding-left: 50px;
-        padding-top: 95px; */
-    padding: 20px 40px;
-  }
-  .landing-section header img {
-    height: 110px;
-    margin: 40px 0px 0px 48px;
-  }
+
   .landing-section section h1 {
     font-size: 2.5rem;
     line-height: 3rem;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding: 0 3px;
   }
-  .landing-section section button {
-    margin-top: 50px;
+
+  .order-button {
+    margin: 30px 0;
     height: 20px;
-    padding: 20px;
-  }
-  /* .landing-section section img{
-        height: 20px;
-    } */
-  .menu-section .menu-items {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .item-image1,
-  .item-image2,
-  .item-image3 {
-    height: 200px;
-    width: auto;
-    border-radius: 10px 10px 0px 0px;
-    background-color: cadetblue;
-    overflow: hidden;
-    background-size: cover;
-    background-position: top;
-  }
-  .container .outlet-section {
-    height: 400px;
-    width: auto;
-    background-color: var(--bgcolor);
-  }
-  .outlet-section .outlet-container {
-    height: 250px;
-    width: auto;
-    margin: 20px 0px;
-    padding: 10px;
-    grid-template-columns: 1.7fr 1.7fr;
-    grid-gap: 6px;
-  }
-  .outlet-container .left-outlet {
-    grid-column: 1 / 2;
-  }
-  .outlet-container .right-outlet {
-    grid-column: 2 / 3;
-  }
-  .outlet-container .center-pic {
-    display: none;
-  }
-  .left-outlet h4,
-  .right-outlet h4 {
-    font-size: 1.5rem;
-    color: var(--fontwhite);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  .slide-container {
-    height: 350px;
-    width: auto;
-    position: relative;
-  }
-  .slide-container h3 {
-    padding: 0px 5px 1px 5px;
-  }
-  .slide-container .slide-box {
-    height: 260px;
-    margin: 20px auto;
-    padding: 10px 30px;
-    max-width: 440px;
-    /* background-color: chartreuse; */
-  }
-  .author {
-    position: absolute;
-    right: 15%;
-    margin-top: 10px;
-    /* margin-bottom: 10px; */
-  }
-  .slide-container #next,
-  .slide-container #prev {
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    font-size: 18px;
-  }
-  .slide-container #next {
-    right: 35%;
-    top: 88%;
-  }
-  .slide-container #prev {
-    left: 35%;
-    top: 88%;
-  }
-  footer {
-    height: max-content;
-    padding: 10px 0px;
-    margin-top: 10px;
-  }
-  .footer-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    /* justify-content: space-evenly; */
-  }
-  .footer-container .logo-side {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .logo-side img {
-    height: 120px;
-  }
-  .social-connect button {
-    height: 38px;
-  }
-  .footer-container .contacts {
-    height: 300px;
-    width: 90%;
-    padding: 10px 2px;
-    /* background-color: cadetblue; */
-  }
-  .contacts h5 {
-    font-size: 1.4rem;
-    font-weight: 500;
-  }
-  .contact-locations {
-    width: auto;
-    height: max-content;
-    /* background-color: burlywood; */
-  }
-  .location1 h6,
-  .location2 h6 {
-    font-size: 1rem;
-  }
-  .location1 p,
-  .location2 p {
-    padding-bottom: 10px;
-    font-size: 15px;
-  }
-  .location1 span,
-  .location2 span {
-    /* padding-bottom: 10px; */
-    font-size: 15px;
-  }
-  .copyright-text {
-    padding-bottom: 8px;
-    padding-top: 15px;
+    padding: 25px;
   }
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f8f8f8;
-  font-family: "Merriweather", serif;
-}
-
+/* General Styles */
 .header-content {
   max-width: 50%;
 }
