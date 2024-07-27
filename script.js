@@ -1,10 +1,18 @@
-/* script.js */
-function scrollLeft() {
-  const carousel = document.querySelector(".carousel-items");
-  carousel.scrollBy({ left: -200, behavior: "smooth" });
+// Slide Container Next Prev
+
+let slides = document.querySelectorAll(".slide-box");
+let index = 0;
+
+function nextReview() {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}
+function prevReview() {
+  slides[index].classList.remove("active");
+  index = (index - 1 + slides.length) % slides.length;
+  slides[index].classList.add("active");
 }
 
-function scrollRight() {
-  const carousel = document.querySelector(".carousel-items");
-  carousel.scrollBy({ left: 200, behavior: "smooth" });
-}
+next.addEventListener("click", nextReview);
+prev.addEventListener("click", prevReview);
