@@ -401,3 +401,36 @@ footer {
 .carousel-button.right {
   right: 0;
 }
+
+.image {
+    margin: 10px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Larger screen styles */
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .image-large {
+        flex: 2 1 60%;
+        order: 1;
+    }
+
+    .image-small {
+        flex: 1 1 40%;
+        order: 2;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30%;
+        border: 2px solid white; /* optional for better visibility */
+    }
+}
