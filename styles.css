@@ -442,7 +442,7 @@ footer {
     border-radius: 10px;
 }
 img {
-  max-width: 60vw;
+  max-width: 100%;
 }
 .image img {
     width: 100%;
